@@ -1,0 +1,27 @@
+.footerContainer{
+    padding-bottom: 30px;
+    background-color: rgb(199, 211, 19);
+}
+
+.footerCopyRight{
+    text-align: center;
+    padding: 20px;
+}
+
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.footerNav a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.footerNav a:hover{
+    color: white;
+}

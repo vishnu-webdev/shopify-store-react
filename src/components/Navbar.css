@@ -1,0 +1,138 @@
+.navbarContainer {
+    background-color: rgb(199, 211, 19);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative; 
+}
+
+h1 {
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.navbarLinkDiv ul {
+    display: flex;
+}
+
+.navbarLinkDiv li {
+    list-style: none;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.navbarLinkDiv a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s;
+}
+
+.navbarLinkDiv a:hover {
+    color: white;
+}
+
+.navbarAccountSection {
+    display: flex;
+}
+
+button {
+    padding: 6px 15px;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(71, 74, 237);
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(252, 252, 253);
+    transition: all 0.3s;
+}
+
+.navbarAccountSection a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbarAccountSection a:hover {
+    color: blue;
+    transition: all 0.3s;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: absolute;
+        left: -100%;
+        top: 100%; 
+        flex-direction: column;
+        background-color: rgb(199, 211, 19);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        z-index: 1000; 
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .navbarLinkDiv ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .navbarLinkDiv li {
+        padding: 15px 0;
+        font-size: 14px;
+    }
+
+    .navbarAccountSection {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    button {
+        margin-left: 0;
+        width: 120px;
+    }
+}
