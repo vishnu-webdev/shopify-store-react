@@ -1,16 +1,28 @@
-# React + Vite
+# 🛍️ Shopify Store - React Product Listing
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive e-commerce product catalog built with React to help users easily view, search, filter, and sort products.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+Check out the live version here:  
+👉 **[https://vishnu-webdev.github.io/shopify-store-react/](https://vishnu-webdev.github.io/shopify-store-react/)**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Responsive Navigation Bar:** Features a smooth mobile hamburger menu that scrolls naturally with the page.
+- **Product Grid Layout:** Clean product cards displaying images, names, categories, ratings, and prices.
+- **Real-Time Search:** Instantly filter products by their name using the responsive search bar.
+- **Category & Sorting Controls:** Dropdowns to filter products by category and sort them by price or rating.
+- **Interactive Cart Button:** An "Add to Cart" button on each card that logs the selected product's name to the console.
+
+---
+
+## 🛠️ Built With
+
+- **React.js** – Component-based architecture and state management
+- **CSS3** – Custom styling, Flexbox, Grid, and responsive media queries
+- **JavaScript (ES6+)** – Core logic, filtering, and sorting evaluations
